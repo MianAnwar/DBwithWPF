@@ -1,0 +1,17 @@
+﻿<Window x:Class="WpfApp1.ShowAllUsers"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="ShowAllUsers" Height="317.647" Width="440.074">
+    <Grid>
+        <StackPanel>
+        <Label Content="All Users:"></Label>
+        <ListBox Name="showAllUsers" DisplayMemberPath="LastName"></ListBox>
+            <Button Content="Exit" Click="Button_Click"></Button>
+        </StackPanel>
+        
+    </Grid>
+</Window>

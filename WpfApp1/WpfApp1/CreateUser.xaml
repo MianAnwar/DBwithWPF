@@ -1,0 +1,42 @@
+﻿<Window x:Class="WpfApp1.CreateUser"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Registration" Height="300" Width="543.75">
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" >
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,5">
+                <Label Content="First Name: " HorizontalAlignment="Left" Width="100"></Label>
+                <TextBox x:Name="firstName" Width="200" HorizontalAlignment="Right"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0,0,0,5">
+                <Label Content="Last Name: " HorizontalAlignment="Left" Width="100"></Label>
+                <TextBox x:Name="lastName" Width="200" HorizontalAlignment="Right"></TextBox>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0,0,0,5">
+                <Label Content="Email: " HorizontalAlignment="Left" Width="100"></Label>
+                <TextBox x:Name="email" Width="200" HorizontalAlignment="Right"></TextBox>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0,0,0,5">
+                <Label Content="Pasword: " HorizontalAlignment="Left" Width="100"></Label>
+                <TextBox x:Name="password" Width="200" HorizontalAlignment="Right"></TextBox>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0,0,0,5">
+                <Label Content="Confirm Pasword: " HorizontalAlignment="Left" Width="100"></Label>
+                <TextBox x:Name="connfirmPassword" Width="200" HorizontalAlignment="Right"></TextBox>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0,0,0,5">
+                <Button x:Name="submitButton" Height="25" Content="Submit" FontWeight="Bold" HorizontalAlignment="Left" Margin="100,0,30,0" Click="submitButton_Click"></Button>
+                <Button x:Name="cancel" Height="25" Content="Cancel" FontWeight="Bold" HorizontalAlignment="Right" Click="Button_Click"></Button>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
